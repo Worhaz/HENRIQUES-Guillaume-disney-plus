@@ -1,0 +1,50 @@
+.section_disney h2{
+    color: white;
+    text-align: left;
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.1;
+  
+}
+
+.page_accueil{
+    background-image: url(../img/original_2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.section_disney{
+    background-image: url(../img/original_4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.image_pub{
+    background-image: url(../img/Design\ sans\ titre.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+.benef_ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+}
+.benef_item{
+    text-align: center;
+    width: 300px;
+}
+div{
+    display: block;
+}
