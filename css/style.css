@@ -31,7 +31,7 @@
     background-image: url(../img/Design\ sans\ titre.svg);
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 .benef_ligne{
     display: flex;
