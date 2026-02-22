@@ -1,50 +1,201 @@
-.section_disney h2{
-    color: white;
-    text-align: left;
-    margin: 0;
-    font-size: 2em;
-    line-height: 1.1;
+* {
+  font-family: Inspire, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(192, 192, 192);
+  font-size: 18px;
+  line-height: 25px;
+}
+body {
+  background-color: black;
+}
+
+.header_disney {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+
+.btn_identification {
+  text-decoration: none;
+  background-color: #040404ac;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.page_accueil {
+  background-image: url(../img/original_2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.texte_central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 350px;
   
 }
-
-.page_accueil{
-    background-image: url(../img/original_2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.4);
+.texte_central h1 {
+  font-size: 2.5em;
+  font-weight: 575;
+  line-height: 1em;
+  margin: 0;
+}
+.engagement {
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: 575;
+}
+.instruction {
+  font-size: 0.75em;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
 }
 
-.section_disney{
-    background-image: url(../img/original_4.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    position: relative;
+.formulaire {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 20px auto;
 
 }
+#id_mail {
+  padding: 10px;
+  height: 20px;
+  width: 400px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 0.75em;
+  background-color: #2c2e35;
+  margin: 0;
+}
 
-.image_pub{
-    background-image: url(../img/Design\ sans\ titre.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 50vh;
+.btn_incription {
+  background-color: #02d6e8;
+  border: none;
+  font-size: 16px;
+  color: #02172a;
+  padding: 8px 30px;
+  font-weight: 450;
+  border-radius: 0 3px 3px 0;
+  margin: 0;
+  cursor: pointer;
 }
-.benef_ligne{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 500px;
+
+.offre{
+    font-size: 0.8em;
+    font-weight: 200;
 }
-.benef_item{
-    text-align: center;
-    width: 300px;
+
+.note_bas{
+    font-size: 0.6em;
+    line-height: 0.4em;
+    font-weight: 100;
 }
-div{
-    display: block;
+
+.fleche{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    
+}
+
+
+
+.fleche a{
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.fleche:hover {
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.section_disney {
+  background-image: url(../img/original_4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+.section_disney h2 {
+  text-align: left;
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+.image_pub {
+  background-image: url(../img/Design\ sans\ titre.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+}
+.benef_ligne {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.benef_item {
+  text-align: center;
+  width: 300px;
+}
+
+.appareil li,
+.appareil ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appareil_item {
+  text-align: center;
+}
+
+.appareil_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.appareil_icon {
+  width: 160px;
+  height: auto;
+  margin: 0px auto 20px;
+}
+.logo_disney_bas {
+  width: 120px;
+}
+
+.footer_logo {
+  text-align: center;
+}
+.footer_liens {
+  text-align: center;
 }
