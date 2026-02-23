@@ -41,7 +41,8 @@ body {
   background-image: url(../img/original_2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-position: center;
+  max-height: 100vh;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -53,7 +54,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  margin-top: 375px;
+  margin-top: 250px;
   
 }
 .texte_central h1 {
@@ -118,7 +119,7 @@ body {
 }
 
 .fleche{
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 40px;
     
 }
@@ -171,7 +172,79 @@ body {
 }
 .div_disney {
   max-width: 600px;
-  padding: 300px 150px;
+  padding: 200px 50px;
+}
+
+.titre_abonnement {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 150px;
+}
+
+table, td {
+  border-bottom: 1px solid #2c2e35;
+  border-collapse: collapse;
+  
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8em;
+  margin: 0 auto;
+  
+}
+th{
+  border-bottom: 1px solid #2c2e35;
+  border-collapse: collapse;
+  font-weight: 200;
+  font-size: 0.8em;
+  text-align: left;
+  
+}
+
+table, tbody, td, th{
+  padding: 25px 0px;
+}
+
+table{
+  width: 70%;
+}
+.fin{
+  background-color: #292a2ea9;
+}
+.prix{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.trait{
+  font-size: 2.7em;
+  color: #37383f;
+}
+.coche{
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+.note_bas_tableau{
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  
+}
+.note_bas_tableau p{
+  font-size: 0.6em;
+  font-weight: 100;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+.note_bas_tableau p + p {
+  margin-top: 8px;
+}
+.note_bas_tableau p a {
+  font-size: 1em;
+  line-height: inherit;
+  font-weight: inherit;
 }
 .image_pub {
   background-image: url(../img/Design\ sans\ titre.svg);
