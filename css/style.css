@@ -45,6 +45,8 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
 }
 
 .texte_central {
@@ -54,7 +56,8 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  margin-top: 250px;
+  margin-top: 70px;
+  flex: 1;
   
 }
 .texte_central h1 {
@@ -119,9 +122,9 @@ body {
 }
 
 .fleche{
-    padding-top: 10px;
-    padding-bottom: 40px;
-    
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
 }
 
 
@@ -150,6 +153,8 @@ body {
   background-position: center;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .section_disney h2 {
   text-align: left;
@@ -172,7 +177,9 @@ body {
 }
 .div_disney {
   max-width: 600px;
-  padding: 200px 50px;
+  padding: 0 50px;
+  transform: translate(40px, -150px);
+
 }
 
 .titre_abonnement {
