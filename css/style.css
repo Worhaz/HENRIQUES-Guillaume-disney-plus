@@ -348,11 +348,75 @@ table{
   margin-bottom: 50px;
 }
 
-.contenu_faq p{
-  background-color: Grey;
-  padding: 20px;
+.contenu_faq .faq_item {
+  background-color: #1e1f24;
   margin : 0 0 10px 40px;
   width: 90%;
+}
+
+.contenu_faq p{
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenu_faq .faq_question {
+  cursor: pointer;
+}
+
+.contenu_faq .faq_reponse {
+  display: none;
+  margin-top: 0;
+  padding-top: 0px;
+  line-height: 1.5;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+.contenu_faq .faq_reponse p{
+  font-size: 0.85em;
+  margin: 0;
+  padding: 5 20px;
+}
+
+.faq_question{
+  font-weight: 500;
+}
+
+.contenu_faq .faq_reponse li{
+  font-size: 0.85em;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.contenu_faq .faq_reponse .disclaimer {
+  font-size: 0.60em;
+  line-height: 1.45;
+}
+
+.contenu_faq .faq_reponse ul{
+  margin: auto;
+}
+
+.contenu_faq .faq_item.active .faq_reponse {
+  display: block;
+}
+
+.contenu_faq .faq_item.active .faq_question {
+  padding-bottom: 8px;
+}
+
+.contenu_faq .icon {
+  margin-left: 16px;
+  font-size: 1.8em;
+}
+
+.contenu_faq .faq_item.active .icon {
+  font-size: 1.9em;
+  line-height: 1;
+  display: inline-block;
+  transform: scaleX(1.6);
 }
 
 .appareil{
@@ -468,6 +532,8 @@ table{
   margin: 0;
   
 }
+
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer_liens ul {
