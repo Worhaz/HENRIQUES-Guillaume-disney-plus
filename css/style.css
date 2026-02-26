@@ -355,7 +355,7 @@ table{
 }
 
 .contenu_faq p{
-  padding: 15px;
+  padding: 20px;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -381,7 +381,8 @@ table{
 }
 
 .faq_question{
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 .contenu_faq .faq_reponse li{
