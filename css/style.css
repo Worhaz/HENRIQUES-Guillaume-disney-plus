@@ -168,7 +168,7 @@ body {
 
 
 .fleche a{
-    font-size: 1.4em;
+    font-size: 2.2em;
     text-decoration: none;
 }
 
@@ -502,7 +502,7 @@ table{
 .footer_logo img {
   width: 80px;
 }
-.footer_liens ul {
+.footer_liens > ul {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -514,12 +514,61 @@ table{
 }
 
 .footer_liens li , .footer_liens a {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 100;
 }
 
 .footer_liens a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.language_item {
+  position: relative;
+}
+
+.language_liste {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 8px 10px;
+  list-style: none;
+  background-color: #040714;
+  border: 1px solid #2c2e35;
+  z-index: 10;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.language_liste a {
+  white-space: nowrap;
+}
+
+.language_item:has(.planete:hover) .language_liste,
+.language_item:has(.language_liste:hover) .language_liste {
+  display: flex;
+}
+
+.language_toggle:hover + .language_liste,
+.language_item:hover .language_liste {
+  display: flex;
+}
+
+.footer_liens a img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+.planete{
+  filter: invert(1);
+  
+}
+.arrow_language {
+  filter: invert(1);
 }
 
 .copyright{
@@ -528,7 +577,7 @@ table{
 
 .copyright p{
   text-align: center;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: 100;
   margin: 0;
   
@@ -537,7 +586,7 @@ table{
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .footer_liens ul {
+  .footer_liens > ul {
     flex-wrap: wrap;
     overflow-x: hidden;
     justify-content: center;
@@ -569,6 +618,7 @@ table{
   }
 
   .footer_liens ul {
+  .footer_liens > ul {
     flex-wrap: wrap;
     overflow-x: hidden;
     justify-content: center;
@@ -577,4 +627,5 @@ table{
   .footer_liens li {
     white-space: normal;
   }
+}
 }
