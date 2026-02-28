@@ -330,7 +330,7 @@ table{
 }
 
 .contenu_faq .faq_item {
-  background-color: #1e1f24;
+  background-color: #13151D;
   margin : 0 0 10px 40px;
   width: 90%;
 }
@@ -416,14 +416,13 @@ table{
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 .appareil li {
   text-align: center;
   font-size: 0.8em;
-  margin-left: 80px;
-  margin-bottom: -5px;
+  margin: 0;
+  padding: 0;
   font-weight: 100;
   
 }
@@ -437,15 +436,14 @@ table{
 
 .appareil_item h3 {
   text-align: center;
-  margin-left: 80px;
-  margin-bottom: 12px;
-  margin-top: 0;
+  margin: 0 auto 12px;
   font-size: 1.2em;
 }
 
 .appareil_item ul {
-  width: auto;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -454,22 +452,18 @@ table{
 
 .appareil_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  width: 90%;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  width: 95%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .appareil_icon {
-  width: clamp(250px, 24vw, 370px);
+  width: 100%;
   height: auto;
   margin: 0 auto 20px;
 }
-
-
-
-
 
 
 .logo_disney_bas {
@@ -567,6 +561,22 @@ table{
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .appareil_container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .benef_ligne {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .benef_item {
+    width: auto;
+    flex: 1;
+    max-width: 250px;
+  }
+
   .footer_liens > ul {
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -578,6 +588,14 @@ table{
   }
 }
 
+@media (min-width: 1025px) {
+  .appareil_container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+
+
 
 
 
@@ -586,28 +604,6 @@ table{
     background-position: center top;
     background-size: 100%;
     background-color: #040714;
-  }
-
-  .appareil_container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .appareil_icon {
-    width: clamp(140px, 28vw, 210px);
-  }
-
-  .appareil li, .appareil_item h3  {
-    margin-left: 0px;
-  }
-
-  .footer_liens > ul {
-    flex-wrap: wrap;
-    overflow-x: hidden;
-    justify-content: center;
-  }
-
-  .footer_liens li {
-    white-space: normal;
   }
 
   .section_disney {
@@ -637,15 +633,6 @@ table{
     font-size: 2.4em;
   }
 
-  .img_tel{
-    background-image: url(../img/original_3.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: min(100%, 460px);
-    height: 350px;
-    margin: 120px auto 0;
-  }
 
   .formulaire {
     flex-direction: column;
@@ -700,5 +687,55 @@ table{
     font-size: 1.8em;
     line-height: 1;
   }
-  
+
+
+  .img_tel{
+    background-image: url(../img/original_3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: min(100%, 460px);
+    height: 350px;
+    margin: 120px auto 0;
+  }
+
+.contenu_faq .faq_item {
+    margin: 0 0 10px 40px;
+    width: 85%;
+    margin-right: 40px;
+  }
+
+  .appareil_container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 95%;
+  }
+
+  .appareil_item {
+    padding: 0 8px;
+  }
+
+  .appareil_icon {
+    width: 100%;
+  }
+
+  .appareil_item h3 {
+    font-size: 1em;
+    margin: 0 auto 8px;
+  }
+
+  .appareil li {
+    font-size: 0.75em;
+  }
+
+  .footer_liens > ul {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+
+  .footer_liens li {
+    white-space: normal;
+  }
+
 }
