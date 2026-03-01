@@ -207,6 +207,15 @@ body {
   margin-bottom: 150px;
 }
 
+.bouton_tel,
+.prix_tel {
+  display: none;
+}
+
+.text_abo_tel{
+  display: none;
+}
+
 table, td {
   border-bottom: 1px solid #2c2e35;
   border-collapse: collapse;
@@ -560,7 +569,47 @@ table{
 
 
 
+
+
 @media (min-width: 769px) and (max-width: 1024px) {
+table{
+  width: 95%;
+}
+  .bouton_tel,
+  .prix_tel {
+    display: table-row;
+  }
+
+  .bouton_tel > th {
+    border-bottom: transparent;
+  }
+
+  .bouton_tel > td {
+    background-color: #215e66;
+    border-top: 1px solid #2c2e35;
+    border-bottom: transparent;
+    padding: 10px 14px 6px;
+    min-width: 170px;
+    background-clip: content-box;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .bouton_tel > .pre {
+    background-color: #02d6e8;
+    color: black;
+    font-weight: 700;
+  }
+
+  .prix_tel > td {
+    border-bottom: 1px solid white;
+    padding-top: 4px;
+  }
+  .prix_tel > th{
+    border: transparent;
+  }
+
   .appareil_container {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -588,6 +637,8 @@ table{
   }
 }
 
+
+
 @media (min-width: 1025px) {
   .appareil_container {
     grid-template-columns: repeat(4, 1fr);
@@ -600,6 +651,18 @@ table{
 
 
 @media (max-width: 768px) {
+
+  .titre_abonnement {
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+
+  h3, h2{
+    font-size: 2em;
+    line-height: 1em;
+  }
+
   .page_accueil {
     background-position: center top;
     background-size: 100%;
@@ -699,6 +762,81 @@ table{
     margin: 120px auto 0;
   }
 
+  .benef_ligne {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benef_item {
+    width: min(90%, 300px);
+  }
+
+  .bouton_tel,
+  .prix_tel {
+    display: table-row;
+  }
+
+  .bouton_tel > th {
+    border-bottom: transparent;
+  }
+
+  .bouton_tel > td {
+    background-color: #215e66;
+    border-top: 1px solid #2c2e35;
+    border-bottom: transparent;
+    padding: 10px 14px 6px;
+    min-width: 170px;
+    background-clip: content-box;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .bouton_tel > .pre {
+    background-color: #02d6e8;
+    color: black;
+    font-weight: 700;
+  }
+
+  .prix_tel > td {
+    border-bottom: 1px solid white;
+    padding-top: 4px;
+  }
+
+
+  .text_abo_tel{
+    display: table-row;
+  }
+
+  .text_abo_tel > td {
+    border-bottom: transparent;
+    padding: 10px 4px 0px;
+  }
+
+  table td {
+    padding: 0px 0px 15px;
+  }
+  
+
+  table {
+    border-spacing: 0;
+    width: 50%;;
+  }
+
+  tbody th{
+    display: none;
+  }
+  .note_bas_tableau {
+    max-width: 80%;
+    padding-bottom: 70px;
+   
+  }
+ 
+
+  
+ .fin{
+    background-color: transparent;
+  }
 .contenu_faq .faq_item {
     margin: 0 0 10px 40px;
     width: 85%;
@@ -737,5 +875,13 @@ table{
   .footer_liens li {
     white-space: normal;
   }
+
+
+
+.note_bas_tableau {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
 
 }
