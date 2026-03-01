@@ -952,3 +952,20 @@ table {
     padding: 0px 80px 20px;
   }
 }
+@media (max-width: 500px){
+.bouton_tel > td {
+           background-color: #215e66;
+        border-top: 1px solid #2c2e35;
+        border-bottom: transparent;
+        padding: 10px 14px 6px;
+        min-width: 110px;
+        background-clip: content-box;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+}
+
+.footer_container{
+  padding: 0px 20px 20px;
+}
+}
