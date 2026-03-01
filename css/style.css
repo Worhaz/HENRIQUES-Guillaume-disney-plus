@@ -141,7 +141,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 30px;
-}
+} 
 
 .fleche a {
   font-size: 2.2em;
@@ -558,6 +558,10 @@ table {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+  .fleche{
+    position: static;
+  }
   table {
     width: 95%;
   }
