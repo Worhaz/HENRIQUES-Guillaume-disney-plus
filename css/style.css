@@ -5,9 +5,10 @@
   color: rgb(223, 223, 223);
   font-size: 18px;
   line-height: 25px;
-  
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -18,7 +19,7 @@ body {
 }
 
 body {
-  background-color: #040714 ;
+  background-color: #040714;
   margin: 0;
 }
 
@@ -69,7 +70,6 @@ body {
   padding: 0 20px;
   margin-top: 70px;
   flex: 1;
-  
 }
 .texte_central h1 {
   font-size: 2em;
@@ -98,7 +98,6 @@ body {
   flex-wrap: nowrap;
   width: min(92%, 640px);
   margin: 20px auto;
-
 }
 #id_mail {
   padding: 10px;
@@ -127,37 +126,34 @@ body {
   cursor: pointer;
 }
 
-
-
-.offre{
-    font-size: 0.8em;
-    font-weight: 200;
+.offre {
+  font-size: 0.8em;
+  font-weight: 200;
 }
 
-.note_bas{
-    font-size: 0.6em;
-    line-height: 0.4em;
-    font-weight: 100;
+.note_bas {
+  font-size: 0.6em;
+  line-height: 0.4em;
+  font-weight: 100;
 }
 
-.fleche{
+.fleche {
   position: absolute;
   left: 50%;
   bottom: 30px;
 }
 
-
-
-.fleche a{
-    font-size: 2.2em;
-    text-decoration: none;
+.fleche a {
+  font-size: 2.2em;
+  text-decoration: none;
 }
 
 .fleche:hover {
-    animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -198,7 +194,6 @@ body {
   max-width: 600px;
   padding: 0 50px;
   transform: translate(40px, -150px);
-
 }
 
 .titre_abonnement {
@@ -212,61 +207,62 @@ body {
   display: none;
 }
 
-.text_abo_tel{
+.text_abo_tel {
   display: none;
 }
 
-table, td {
+table,
+td {
   border-bottom: 1px solid #2c2e35;
   border-collapse: collapse;
-  
+
   text-align: center;
   font-weight: 200;
   font-size: 0.8em;
   margin: 0 auto;
-  
 }
-th{
+th {
   border-bottom: 1px solid #2c2e35;
   border-collapse: collapse;
   font-weight: 200;
   font-size: 0.8em;
   text-align: left;
-  
 }
 
-table, tbody, td, th{
+table,
+tbody,
+td,
+th {
   padding: 25px 0px;
 }
 
-table{
+table {
   width: 70%;
 }
-.fin{
+.fin {
   background-color: #292a2ea9;
 }
-.prix{
+.prix {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.trait{
+.trait {
   font-size: 2.7em;
   color: #37383f;
 }
-.coche{
+.coche {
   font-size: 1.3em;
   color: #ffffff;
 }
 
-.note_bas_tableau{
+.note_bas_tableau {
   text-align: left;
   width: 70%;
   margin: 0 auto;
   margin-bottom: 150px;
-  
 }
-.note_bas_tableau p{
+.note_bas_tableau p {
   font-size: 0.7em;
   font-weight: 100;
   line-height: 1.4em;
@@ -283,17 +279,16 @@ table{
   font-weight: inherit;
 }
 
-
-.pub{
+.pub {
   align-items: center;
   text-align: center;
   margin-bottom: 100px;
 }
-.pub h2{
+.pub h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
 }
-.pub p{
+.pub p {
   font-size: 0.8em;
   font-weight: 100;
   margin: 0;
@@ -320,14 +315,13 @@ table{
   flex-wrap: wrap;
   height: auto;
   padding-top: 24px;
-
 }
 .benef_item {
   text-align: center;
   width: 300px;
 }
 
-.faq{
+.faq {
   margin-bottom: 150px;
 }
 
@@ -339,12 +333,12 @@ table{
 }
 
 .contenu_faq .faq_item {
-  background-color: #13151D;
-  margin : 0 0 10px 40px;
+  background-color: #13151d;
+  margin: 0 0 10px 40px;
   width: 90%;
 }
 
-.contenu_faq p{
+.contenu_faq p {
   padding: 20px;
   margin: 0;
   display: flex;
@@ -364,29 +358,29 @@ table{
   background-color: transparent;
   padding-bottom: 10px;
 }
-.contenu_faq .faq_reponse p{
+.contenu_faq .faq_reponse p {
   font-size: 0.85em;
   margin: 0;
   padding: 5 20px;
 }
 
-.faq_question{
+.faq_question {
   font-weight: 600;
   font-size: 1em;
 }
 
-.contenu_faq .faq_reponse li{
+.contenu_faq .faq_reponse li {
   font-size: 0.85em;
   padding: 5px;
   margin-left: 30px;
 }
 
 .contenu_faq .faq_reponse .disclaimer {
-  font-size: 0.60em;
+  font-size: 0.6em;
   line-height: 1.45;
 }
 
-.contenu_faq .faq_reponse ul{
+.contenu_faq .faq_reponse ul {
   margin: auto;
 }
 
@@ -410,11 +404,11 @@ table{
   transform: scaleX(1.6);
 }
 
-.appareil{
+.appareil {
   margin-bottom: 150px;
 }
 
-.appareil  h3{
+.appareil h3 {
   text-align: center;
   font-size: 1.7em;
   font-weight: 400;
@@ -433,7 +427,6 @@ table{
   margin: 0;
   padding: 0;
   font-weight: 100;
-  
 }
 
 .appareil_item {
@@ -474,7 +467,6 @@ table{
   margin: 0 auto 20px;
 }
 
-
 .logo_disney_bas {
   width: 120px;
 }
@@ -494,10 +486,10 @@ table{
   gap: 16px;
   margin: 10px auto;
   padding: 0;
-  
 }
 
-.footer_liens li , .footer_liens a {
+.footer_liens li,
+.footer_liens a {
   font-size: 0.9em;
   font-weight: 100;
 }
@@ -547,34 +539,51 @@ table{
   width: auto;
   display: block;
 }
-.planete{
+.planete {
   filter: invert(1);
-  
 }
 .arrow_language {
   filter: invert(1);
 }
 
-.copyright{
+.copyright {
   margin-top: 20px;
 }
 
-.copyright p{
+.copyright p {
   text-align: center;
   font-size: 0.7em;
   font-weight: 100;
   margin: 0;
-  
 }
-
-
-
-
 
 @media (min-width: 769px) and (max-width: 1024px) {
-table{
-  width: 95%;
-}
+  table {
+    width: 95%;
+  }
+
+  .texte_central{
+    margin-top: 190px;
+  }
+  .section_disney {
+    background-size: 100% auto;
+    background-position: right center;
+    background-color: #040714;
+    min-height: 70vh;
+  }
+
+  .div_disney{
+    margin-top: 170px;
+    max-width: 600px;
+    padding: 0px 250px 0px 0px;
+  }
+
+  .titre_abonnement{
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: bold ;
+  }
+
   .bouton_tel,
   .prix_tel {
     display: table-row;
@@ -591,7 +600,7 @@ table{
     padding: 10px 14px 6px;
     min-width: 170px;
     background-clip: content-box;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 0.8em;
     font-weight: bold;
   }
@@ -606,10 +615,20 @@ table{
     border-bottom: 1px solid white;
     padding-top: 4px;
   }
-  .prix_tel > th{
+  .prix_tel > th {
     border: transparent;
   }
 
+  .note_bas_tableau {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
+
+  .pub h2{
+    font-size: 2em;
+    font-weight: bold;
+  }
   .appareil_container {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -623,9 +642,32 @@ table{
   .benef_item {
     width: auto;
     flex: 1;
-    max-width: 250px;
+    max-width: 280px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .benef_item h3{
+    font-size: 1.3em;
+    line-height: 1em;
+    font-weight: bold;
   }
 
+  .faq h3{
+    margin-top: 0px;
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+
+  .appareil>h3{
+    margin-top: 0px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .appareil_item h3{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
   .footer_liens > ul {
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -637,8 +679,6 @@ table{
   }
 }
 
-
-
 @media (min-width: 1025px) {
   .appareil_container {
     grid-template-columns: repeat(4, 1fr);
@@ -646,22 +686,37 @@ table{
   }
 }
 
-
-
-
-
 @media (max-width: 768px) {
-
   .titre_abonnement {
     font-size: 3em;
     margin-bottom: 40px;
     font-weight: bold;
-  }
-
-  h3, h2{
-    font-size: 2em;
     line-height: 1em;
   }
+
+  .texte_central h1,
+  .pub h2,
+  .faq h3,
+  .appareil h3 {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: bold;
+  }
+.appareil_item{
+    font-size: 1.7em;
+  }
+  
+  .appareil_item ul {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+
+  .benef_item h3{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.4em;
+  }
+
 
   .page_accueil {
     background-position: center top;
@@ -693,9 +748,16 @@ table{
   }
 
   .section_disney h2 {
-    font-size: 2.4em;
+    font-size: 3em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
   }
 
+  .section_disney .text_disney{
+    font-size: 2em;
+    line-height: 1.3em;
+  }
 
   .formulaire {
     flex-direction: column;
@@ -720,25 +782,24 @@ table{
   }
 
   .offre {
-    font-size: 0.9em;
+    font-size: 1.4em;
     line-height: 1.4;
     margin: 12px auto 0;
-    max-width: min(92%, 460px);
+    max-width: min(92%, 660px);
     text-align: center;
   }
 
   .note_bas {
-    font-size: 0.7em;
+    font-size: 0.9em;
     line-height: 1.35;
     margin: 20px auto 0;
-    max-width: min(92%, 460px);
+    max-width: min(92%, 660px);
     text-align: center;
   }
 
   .note_bas + .note_bas {
     margin-top: 2px;
   }
-  
 
   .fleche {
     position: static;
@@ -751,15 +812,14 @@ table{
     line-height: 1;
   }
 
-
-  .img_tel{
+  .img_tel {
     background-image: url(../img/original_3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: min(100%, 460px);
-    height: 350px;
-    margin: 120px auto 0;
+    width: min(100%, 560px);
+    height: 450px;
+    margin: 90px auto 0;
   }
 
   .benef_ligne {
@@ -768,7 +828,11 @@ table{
   }
 
   .benef_item {
-    width: min(90%, 300px);
+    width: min(90%, 500px);
+  }
+  .benef_item p{
+    font-size: 1.3em;
+    line-height: 1.4em;
   }
 
   .bouton_tel,
@@ -787,7 +851,7 @@ table{
     padding: 10px 14px 6px;
     min-width: 170px;
     background-clip: content-box;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 0.8em;
     font-weight: bold;
   }
@@ -803,41 +867,36 @@ table{
     padding-top: 4px;
   }
 
-
-  .text_abo_tel{
+  .text_abo_tel {
     display: table-row;
   }
 
   .text_abo_tel > td {
     border-bottom: transparent;
-    padding: 10px 4px 0px;
+    padding: 10px 4px 10px;
   }
 
   table td {
     padding: 0px 0px 15px;
   }
-  
 
   table {
     border-spacing: 0;
-    width: 50%;;
+    width: 50%;
   }
 
-  tbody th{
+  tbody th {
     display: none;
   }
   .note_bas_tableau {
     max-width: 80%;
     padding-bottom: 70px;
-   
   }
- 
 
-  
- .fin{
+  .fin {
     background-color: transparent;
   }
-.contenu_faq .faq_item {
+  .contenu_faq .faq_item {
     margin: 0 0 10px 40px;
     width: 85%;
     margin-right: 40px;
@@ -876,12 +935,20 @@ table{
     white-space: normal;
   }
 
+  .note_bas_tableau {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+  }
 
+  .faq_question {
+    font-size: 1.2em;
+  }
+  .contenu_faq .icon{
+    font-size: 3em;
+  }
 
-.note_bas_tableau {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 70px;
-}
-
+  .footer_container{
+    padding: 0px 80px 20px;
+  }
 }
