@@ -1,3 +1,7 @@
+/* ========================================
+   STYLES GÉNÉRAUX
+   ======================================== */
+
 * {
   font-family: Inspire, sans-serif;
   font-style: normal;
@@ -6,6 +10,7 @@
   font-size: 18px;
   line-height: 25px;
 }
+
 *,
 *::before,
 *::after {
@@ -23,11 +28,16 @@ body {
   margin: 0;
 }
 
+/* ========================================
+   HEADER & NAVIGATION
+   ======================================== */
+
 .header_disney {
   display: flex;
   justify-content: flex-end;
   padding: 20px 30px;
 }
+
 #id_mail {
   padding: 10px;
   height: 48px;
@@ -48,6 +58,10 @@ body {
   border-radius: 5px;
   font-size: 0.9em;
 }
+
+/* ========================================
+   PAGE D'ACCUEIL
+   ======================================== */
 
 .page_accueil {
   background-image: url(../img/original_2.jpeg);
@@ -71,17 +85,20 @@ body {
   margin-top: 70px;
   flex: 1;
 }
+
 .texte_central h1 {
   font-size: 2em;
   font-weight: 600;
   line-height: 1em;
   margin: 0;
 }
+
 .engagement {
   font-size: 1.2em;
   margin-top: 20px;
   font-weight: 600;
 }
+
 .instruction {
   font-size: 0.75em;
   font-weight: 200;
@@ -99,6 +116,7 @@ body {
   width: min(92%, 640px);
   margin: 20px auto;
 }
+
 #id_mail {
   padding: 10px;
   height: 48px;
@@ -141,7 +159,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: 30px;
-} 
+}
 
 .fleche a {
   font-size: 2.2em;
@@ -151,15 +169,22 @@ body {
 .fleche:hover {
   animation: bounce 3s infinite;
 }
+
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(10px);
   }
 }
+
+/* ========================================
+   SECTION DISNEY
+   ======================================== */
 
 .section_disney {
   background-image: url(../img/original_4.jpeg);
@@ -171,6 +196,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .section_disney h2 {
   text-align: left;
   margin: 0;
@@ -179,22 +205,29 @@ body {
   font-weight: bold;
   margin-bottom: 30px;
 }
+
 .text_disney {
   font-size: 0.9em;
   font-weight: 100;
   margin: 0;
   padding: 0;
 }
+
 .copy {
   font-size: 0.8em;
   font-weight: 100;
   margin-top: 40px;
 }
+
 .div_disney {
   max-width: 600px;
   padding: 0 50px;
   transform: translate(40px, -150px);
 }
+
+/* ========================================
+   TABLEAU DES ABONNEMENTS
+   ======================================== */
 
 .titre_abonnement {
   text-align: center;
@@ -221,6 +254,7 @@ td {
   font-size: 0.8em;
   margin: 0 auto;
 }
+
 th {
   border-bottom: 1px solid #2c2e35;
   border-collapse: collapse;
@@ -239,9 +273,11 @@ th {
 table {
   width: 70%;
 }
+
 .fin {
   background-color: #292a2ea9;
 }
+
 .prix {
   font-weight: bold;
   text-decoration: underline;
@@ -251,6 +287,7 @@ table {
   font-size: 2.7em;
   color: #37383f;
 }
+
 .coche {
   font-size: 1.3em;
   color: #ffffff;
@@ -262,6 +299,7 @@ table {
   margin: 0 auto;
   margin-bottom: 150px;
 }
+
 .note_bas_tableau p {
   font-size: 0.7em;
   font-weight: 100;
@@ -270,30 +308,39 @@ table {
   padding: 0;
   margin-top: 30px;
 }
-.note_bas_tableau p + p {
+
+.note_bas_tableau p+p {
   margin-top: 8px;
 }
+
 .note_bas_tableau p a {
   font-size: 1em;
   line-height: inherit;
   font-weight: inherit;
 }
 
+/* ========================================
+   SECTION PUBLICITÉ & BÉNÉFICES
+   ======================================== */
+
 .pub {
   align-items: center;
   text-align: center;
   margin-bottom: 100px;
 }
+
 .pub h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
 }
+
 .pub p {
   font-size: 0.8em;
   font-weight: 100;
   margin: 0;
   padding: 20px;
 }
+
 .image_pub {
   display: flex;
   justify-content: center;
@@ -316,10 +363,15 @@ table {
   height: auto;
   padding-top: 24px;
 }
+
 .benef_item {
   text-align: center;
   width: 300px;
 }
+
+/* ========================================
+   SECTION FAQ
+   ======================================== */
 
 .faq {
   margin-bottom: 150px;
@@ -358,6 +410,7 @@ table {
   background-color: transparent;
   padding-bottom: 10px;
 }
+
 .contenu_faq .faq_reponse p {
   font-size: 0.85em;
   margin: 0;
@@ -403,6 +456,10 @@ table {
   display: inline-block;
   transform: scaleX(1.6);
 }
+
+/* ========================================
+   SECTION APPAREILS
+   ======================================== */
 
 .appareil {
   margin-bottom: 150px;
@@ -467,6 +524,10 @@ table {
   margin: 0 auto 20px;
 }
 
+/* ========================================
+   FOOTER
+   ======================================== */
+
 .logo_disney_bas {
   width: 120px;
 }
@@ -478,7 +539,8 @@ table {
 .footer_logo img {
   width: 80px;
 }
-.footer_liens > ul {
+
+.footer_liens>ul {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
@@ -529,7 +591,7 @@ table {
   display: flex;
 }
 
-.language_toggle:hover + .language_liste,
+.language_toggle:hover+.language_liste,
 .language_item:hover .language_liste {
   display: flex;
 }
@@ -539,9 +601,11 @@ table {
   width: auto;
   display: block;
 }
+
 .planete {
   filter: invert(1);
 }
+
 .arrow_language {
   filter: invert(1);
 }
@@ -557,18 +621,23 @@ table {
   margin: 0;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+/* ========================================
+   MEDIA QUERIES - TABLETTE (769px - 1024px)
+   ======================================== */
 
-  .fleche{
+@media (min-width: 769px) and (max-width: 1024px) {
+  .fleche {
     position: static;
   }
+
   table {
     width: 95%;
   }
 
-  .texte_central{
+  .texte_central {
     margin-top: 190px;
   }
+
   .section_disney {
     background-size: 100% auto;
     background-position: right center;
@@ -576,16 +645,16 @@ table {
     min-height: 70vh;
   }
 
-  .div_disney{
+  .div_disney {
     margin-top: 170px;
     max-width: 600px;
     padding: 0px 250px 0px 0px;
   }
 
-  .titre_abonnement{
+  .titre_abonnement {
     margin-bottom: 40px;
     font-size: 2.5em;
-    font-weight: bold ;
+    font-weight: bold;
   }
 
   .bouton_tel,
@@ -593,11 +662,11 @@ table {
     display: table-row;
   }
 
-  .bouton_tel > th {
+  .bouton_tel>th {
     border-bottom: transparent;
   }
 
-  .bouton_tel > td {
+  .bouton_tel>td {
     background-color: #215e66;
     border-top: 1px solid #2c2e35;
     border-bottom: transparent;
@@ -609,17 +678,18 @@ table {
     font-weight: bold;
   }
 
-  .bouton_tel > .pre {
+  .bouton_tel>.pre {
     background-color: #02d6e8;
     color: black;
     font-weight: 700;
   }
 
-  .prix_tel > td {
+  .prix_tel>td {
     border-bottom: 1px solid white;
     padding-top: 4px;
   }
-  .prix_tel > th {
+
+  .prix_tel>th {
     border: transparent;
   }
 
@@ -629,10 +699,11 @@ table {
     padding-bottom: 70px;
   }
 
-  .pub h2{
+  .pub h2 {
     font-size: 2em;
     font-weight: bold;
   }
+
   .appareil_container {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
@@ -650,29 +721,31 @@ table {
     font-size: 1.3em;
     font-weight: bold;
   }
-  .benef_item h3{
+
+  .benef_item h3 {
     font-size: 1.3em;
     line-height: 1em;
     font-weight: bold;
   }
 
-  .faq h3{
+  .faq h3 {
     margin-top: 0px;
     font-size: 2.3em;
     font-weight: bold;
   }
 
-  .appareil>h3{
+  .appareil>h3 {
     margin-top: 0px;
     font-size: 2em;
     font-weight: bold;
   }
 
-  .appareil_item h3{
+  .appareil_item h3 {
     font-size: 1.5em;
     font-weight: bold;
   }
-  .footer_liens > ul {
+
+  .footer_liens>ul {
     flex-wrap: wrap;
     overflow-x: hidden;
     justify-content: center;
@@ -683,12 +756,20 @@ table {
   }
 }
 
+/* ========================================
+   MEDIA QUERIES - DESKTOP (1025px et +)
+   ======================================== */
+
 @media (min-width: 1025px) {
   .appareil_container {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
 }
+
+/* ========================================
+   MEDIA QUERIES - MOBILE (max 768px)
+   ======================================== */
 
 @media (max-width: 768px) {
   .titre_abonnement {
@@ -706,21 +787,21 @@ table {
     line-height: 1em;
     font-weight: bold;
   }
-.appareil_item{
+
+  .appareil_item {
     font-size: 1.7em;
   }
-  
+
   .appareil_item ul {
     font-size: 0.7em;
     font-weight: bold;
   }
 
-  .benef_item h3{
+  .benef_item h3 {
     font-size: 2em;
     font-weight: bold;
     line-height: 1.4em;
   }
-
 
   .page_accueil {
     background-position: center top;
@@ -758,7 +839,7 @@ table {
     margin-top: 40px;
   }
 
-  .section_disney .text_disney{
+  .section_disney .text_disney {
     font-size: 2em;
     line-height: 1.3em;
   }
@@ -801,7 +882,7 @@ table {
     text-align: center;
   }
 
-  .note_bas + .note_bas {
+  .note_bas+.note_bas {
     margin-top: 2px;
   }
 
@@ -834,7 +915,8 @@ table {
   .benef_item {
     width: min(90%, 500px);
   }
-  .benef_item p{
+
+  .benef_item p {
     font-size: 1.3em;
     line-height: 1.4em;
   }
@@ -844,11 +926,11 @@ table {
     display: table-row;
   }
 
-  .bouton_tel > th {
+  .bouton_tel>th {
     border-bottom: transparent;
   }
 
-  .bouton_tel > td {
+  .bouton_tel>td {
     background-color: #215e66;
     border-top: 1px solid #2c2e35;
     border-bottom: transparent;
@@ -860,13 +942,13 @@ table {
     font-weight: bold;
   }
 
-  .bouton_tel > .pre {
+  .bouton_tel>.pre {
     background-color: #02d6e8;
     color: black;
     font-weight: 700;
   }
 
-  .prix_tel > td {
+  .prix_tel>td {
     border-bottom: 1px solid white;
     padding-top: 4px;
   }
@@ -875,7 +957,7 @@ table {
     display: table-row;
   }
 
-  .text_abo_tel > td {
+  .text_abo_tel>td {
     border-bottom: transparent;
     padding: 10px 4px 10px;
   }
@@ -892,6 +974,7 @@ table {
   tbody th {
     display: none;
   }
+
   .note_bas_tableau {
     max-width: 80%;
     padding-bottom: 70px;
@@ -900,6 +983,7 @@ table {
   .fin {
     background-color: transparent;
   }
+
   .contenu_faq .faq_item {
     margin: 0 0 10px 40px;
     width: 85%;
@@ -929,7 +1013,7 @@ table {
     font-size: 0.75em;
   }
 
-  .footer_liens > ul {
+  .footer_liens>ul {
     flex-wrap: wrap;
     overflow-x: hidden;
     justify-content: center;
@@ -948,34 +1032,38 @@ table {
   .faq_question {
     font-size: 1.2em;
   }
-  .contenu_faq .icon{
+
+  .contenu_faq .icon {
     font-size: 3em;
   }
 
-  .footer_container{
+  .footer_container {
     padding: 0px 80px 20px;
   }
 }
 
-@media (max-width: 500px){
-.bouton_tel > td {
-           background-color: #215e66;
-        border-top: 1px solid #2c2e35;
-        border-bottom: transparent;
-        padding: 10px 10px 10px;
-        min-width: 110px;
-        min-height: 80px;
-        background-clip: content-box;
-        border-radius: 20px;
-        font-size: 0.8em;
-        font-weight: bold;
-        line-height: 1.4em;
-        display: table-cell;
-        vertical-align: middle;
-}
+/* ========================================
+   MEDIA QUERIES - PETITS ÉCRANS (max 500px)
+   ======================================== */
 
-.footer_container{
-  padding: 0px 20px 20px;
-}
+@media (max-width: 500px) {
+  .bouton_tel>td {
+    background-color: #215e66;
+    border-top: 1px solid #2c2e35;
+    border-bottom: transparent;
+    padding: 10px 10px 10px;
+    min-width: 110px;
+    min-height: 80px;
+    background-clip: content-box;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1.4em;
+    display: table-cell;
+    vertical-align: middle;
+  }
 
+  .footer_container {
+    padding: 0px 20px 20px;
+  }
 }
