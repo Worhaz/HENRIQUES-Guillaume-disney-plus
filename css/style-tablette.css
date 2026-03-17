@@ -1,0 +1,133 @@
+/* ========================================
+   STYLES TABLETTE (769px - 1024px)
+   ======================================== */
+
+.fleche {
+  position: static;
+}
+
+table {
+  width: 95%;
+}
+
+.texte_central {
+  margin-top: 190px;
+}
+
+.section_disney {
+  background-size: 100% auto;
+  background-position: right center;
+  background-color: #040714;
+  min-height: 70vh;
+}
+
+.div_disney {
+  margin-top: 170px;
+  max-width: 600px;
+  padding: 0px 250px 0px 0px;
+}
+
+.titre_abonnement {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.bouton_tel,
+.prix_tel {
+  display: table-row;
+}
+
+.bouton_tel>th {
+  border-bottom: transparent;
+}
+
+.bouton_tel>td {
+  background-color: #215e66;
+  border-top: 1px solid #2c2e35;
+  border-bottom: transparent;
+  padding: 10px 14px 6px;
+  min-width: 170px;
+  /* Le fond ne remplit pas la zone de bordure, ce qui conserve l'effet de pastille. */
+  background-clip: content-box;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.bouton_tel>.pre {
+  background-color: #02d6e8;
+  color: black;
+  font-weight: 700;
+}
+
+.prix_tel>td {
+  border-bottom: 1px solid white;
+  padding-top: 4px;
+}
+
+.prix_tel>th {
+  border: transparent;
+}
+
+.note_bas_tableau {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.pub h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.appareil_container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.benef_ligne {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.benef_item {
+  width: auto;
+  flex: 1;
+  max-width: 280px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.benef_item h3 {
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+.faq h3 {
+  margin-top: 0px;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.appareil>h3 {
+  margin-top: 0px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.appareil_item h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.footer_liens>ul {
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.footer_liens li {
+  white-space: normal;
+}

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-tablette.css" media="screen and (min-width: 769px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="./css/style-telephone.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="./css/style-tres-petit-ecran.css" media="screen and (max-width: 500px)">
     <link rel="icon" href="./img/favicon-v2.ico" type="image/x-icon">
     <title>Disney+</title>
 </head>
@@ -53,6 +56,7 @@
                 streaming</p>
             <p class="copy">© 2023 TAS Rights Management LLC</p>
             <p class="img_tel"></p>
+            <!-- Bloc vide utilisé uniquement comme support d'image en CSS sur mobile. -->
         </div>
     </section>
 
@@ -80,9 +84,10 @@
                         <tr class="text_abo_tel">
                             <td colspan="3">Profitez de 12 mois au prix de 10*</td>
                         </tr>
-                        <tr>
+                                    <tr class="text_abo_tel">
                             <th>Profitez de 12 mois au prix de 10*</th>
                             <td class="trait">-</td>
+                                    <!-- Lignes dupliquées pour la version mobile : le libellé passe au-dessus des valeurs. -->
                             <td class="prix">89,90€ / an</td>
                             <td class="prix fin">119,90€ / an</td>
                         </tr>
@@ -334,6 +339,7 @@
                             <img src="./img/logo-planete.svg" alt="globe " class="planete"> Français
                             <img src="./img/logo-valide-noir.svg" alt="fleche language" class="arrow_language">
                         </a>
+                        <!-- La liste imbriquée sert de menu déroulant pour changer de langue. -->
                         <ul class="language_liste">
                             <li><a href="./index.html">Français</a></li>
                             <li><a href="./index_en.html">Anglais</a></li>

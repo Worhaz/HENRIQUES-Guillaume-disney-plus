@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-tablette.css" media="screen and (min-width: 769px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="./css/style-telephone.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="./css/style-tres-petit-ecran.css" media="screen and (max-width: 500px)">
     <link rel="icon" href="./img/favicon-v2.ico" type="image/x-icon">
     <title>Disney+</title>
 </head>
 
 <body>
-    <!-- ========================================
-         HOME PAGE SECTION
-         ======================================== -->
+        <!-- ========================================
+            SECTION PAGE D'ACCUEIL
+            ======================================== -->
     <section class="page_accueil">
         <header class="header_disney">
             <a href="https://www.disneyplus.com/identity/login/enter-email" class="btn_identification">SIGN IN</a>
@@ -39,21 +42,22 @@
 
     </section>
 
-    <!-- ========================================
-         DISNEY SECTION
-         ======================================== -->
+        <!-- ========================================
+            SECTION DISNEY
+            ======================================== -->
     <section class="section_disney" id="disney">
         <div class="div_disney">
             <h2>Only on Disney+</h2>
             <p class="text_disney">Exclusive original series and productions you won't find on <br> any other streaming
                 service</p>
             <p class="copy">© 2023 TAS Rights Management LLC</p>
+            <!-- Bloc vide utilisé uniquement comme support d'image en CSS sur mobile. -->
             <p class="img_tel"></p>
         </div>
     </section>
 
     <!-- ========================================
-         SUBSCRIPTIONS SECTION
+         SECTION ABONNEMENTS
          ======================================== -->
     <section class="abonnement">
         <div class="container_abonnement">
@@ -73,6 +77,7 @@
                             <td>8,99€ / month</td>
                             <td>11,99€ / month</td>
                         </tr>
+                        <!-- Lignes dupliquées pour la version mobile : le libellé passe au-dessus des valeurs. -->
                         <tr class="text_abo_tel">
                             <td colspan="3">Enjoy 12 months for the price of 10*</td>
                         </tr>
@@ -143,9 +148,9 @@
         </div>
     </section>
 
-    <!-- ========================================
-         ADVERTISING & BENEFITS SECTION
-         ======================================== -->
+        <!-- ========================================
+            SECTION PUBLICITÉ & BÉNÉFICES
+            ======================================== -->
     <section class="pub">
         <h2>Watch according to your preferences</h2>
         <p>Enjoy the most beautiful stories in the world, anywhere and anytime.</p>
@@ -169,9 +174,9 @@
         </div>
     </section>
 
-    <!-- ========================================
-         FAQ SECTION
-         ======================================== -->
+        <!-- ========================================
+            SECTION FAQ
+            ======================================== -->
     <section class="faq">
         <h3>Frequently Asked Questions</h3>
         <div class="contenu_faq">
@@ -253,9 +258,9 @@
         </div>
     </section>
 
-    <!-- ========================================
-         COMPATIBLE DEVICES SECTION
-         ======================================== -->
+        <!-- ========================================
+            SECTION APPAREILS COMPATIBLES
+            ======================================== -->
     <section class="appareil">
         <h3>Accessible on your preferred devices</h3>
         <div class="appareil_container">
@@ -318,6 +323,7 @@
                             <img src="./img/logo-planete.svg" alt="globe " class="planete"> Anglais
                             <img src="./img/logo-valide-noir.svg" alt="fleche language" class="arrow_language">
                         </a>
+                        <!-- La liste imbriquée sert de menu déroulant pour changer de langue. -->
                         <ul class="language_liste">
                             <li><a href="./index.html">Français</a></li>
                             <li><a href="./index_en.html">Anglais</a></li>
